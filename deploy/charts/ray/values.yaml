@@ -63,11 +63,11 @@ operatorOnly: false
 # clusterOnly - If true, will only create a RayCluster resource with this release,
 # without setting up the Operator.
 # (Useful when launching multiple Ray clusters.)
-clusterOnly: false
+clusterOnly: true
 # namespacedOperator - If true, the operator is scoped to the Release namespace
 # and only manages RayClusters in that namespace.
 # By default, the operator is cluster-scoped and runs in the default namespace.
-namespacedOperator: false
+namespacedOperator: true
 # operatorNamepsace - If using a cluster-scoped operator (namespacedOperator: false), set the namespace
 # in which to launch the operator.
 operatorNamespace: ray-operator-system
