@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  ray:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2021-06-10T09:29:27.657215+09:00"
+    description: A Helm chart for deployments of Ray on Kubernetes.
+    digest: 02f340c19720df7391421be19994216ac1d625ae0e19e2e8a557788c7699543a
+    name: ray
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/sunya-ch/ray-repo-clone/master/deploy/charts/ray/ray-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-06-10T09:29:27.652632+09:00"
