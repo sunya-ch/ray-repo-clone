@@ -41,7 +41,9 @@ spec:
             emptyDir:
               medium: Memory
           containers:
-          - name: ray-node
+          - securityContext:
+              privileged: true
+            name: ray-node
             imagePullPolicy: Always
             image: {{ $.Values.image }}
             # Do not change this command - it keeps the pod alive until it is
