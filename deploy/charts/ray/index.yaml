@@ -3,7 +3,7 @@ entries:
   ray:
   - apiVersion: v2
     appVersion: latest
-    created: "2021-06-10T16:21:17.720678+09:00"
+    created: "2021-06-10T16:30:07.650073+09:00"
     description: A Helm chart for deployments of Ray on Kubernetes.
     digest: b54d1a962b164c0bf114818a68e60408df5f338afe164276289adf9639633999
     name: ray
@@ -14,7 +14,7 @@ entries:
   ray-clone:
   - apiVersion: v2
     appVersion: latest
-    created: "2021-06-10T16:21:17.725775+09:00"
+    created: "2021-06-10T16:30:07.653927+09:00"
     description: A Helm chart for deployments of Ray on Kubernetes.
     digest: 404add183c8b27e33efdb739065031dba05654eadf153991c914c6da073661ee
     name: ray-clone
@@ -22,4 +22,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/sunya-ch/ray-repo-clone/master/deploy/charts/ray/ray-clone-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-10T16:21:17.715888+09:00"
+generated: "2021-06-10T16:30:07.646387+09:00"

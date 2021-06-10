@@ -46,11 +46,11 @@ spec:
       labels:
         cluster.ray.io/component: operator
     spec:
-      securityContext:
-        privileged: true
       serviceAccountName: ray-operator-serviceaccount
       containers:
       - name: ray
+        securityContext:
+          privileged: true
         imagePullPolicy: Always
         image: {{ .Values.operatorImage }}
         command: ["ray-operator"]
