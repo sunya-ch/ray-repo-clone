@@ -1,5 +1,5 @@
 apiVersion: v2
-name: ray
+name: ray-clone
 description: A Helm chart for deployments of Ray on Kubernetes.
 type: application
 
