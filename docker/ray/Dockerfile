@@ -2,7 +2,7 @@ FROM rayproject/ray-deps:nightly
 # For Click
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
-ENV REVISION_TEST=9
+ENV REVISION_TEST=10
 ENV PYTHON_VERSION=3.7.7
 RUN wget https://s3-us-west-2.amazonaws.com/ray-wheels/latest/ray-2.0.0.dev0-cp37-cp37m-manylinux2014_x86_64.whl
 
