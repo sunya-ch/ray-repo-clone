@@ -68,5 +68,7 @@ spec:
             memory: 1Gi
           limits:
             memory: 2Gi
+      imagePullSecrets:
+      - name: all-icr-io
 {{- end }}
 
