@@ -45,7 +45,7 @@ spec:
               privileged: true
             name: ray-node
             imagePullPolicy: Always
-            image: {{ .Values.operatorImage }}
+            image: {{ .image }}
             # Do not change this command - it keeps the pod alive until it is
             # explicitly killed.
             command: ["/bin/bash", "-c", "--"]
@@ -79,9 +79,9 @@ spec:
                 {{- if .GPU }}
                 nvidia.com/gpu: {{ .GPU }}
                 {{- end }}
-          {{- if .Values.imagePullSecret }}
+          {{- if .imagePullSecret }}
           imagePullSecrets:
-          - name: {{ .Values.imagePullSecret }}
+          - name: {{ .imagePullSecret }}
           {{- end }}
           {{- if .nodeSelector }}
           nodeSelector:
