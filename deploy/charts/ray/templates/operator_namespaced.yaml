@@ -68,7 +68,9 @@ spec:
             memory: 1Gi
           limits:
             memory: 2Gi
+      {{- if .Values.imagePullSecret }}
       imagePullSecrets:
-      - name: all-icr-io
+      - name: {{ .Values.imagePullSecret }}
+      {{- end }}
 {{- end }}
 
