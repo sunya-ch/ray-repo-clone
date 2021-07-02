@@ -17,10 +17,10 @@ podTypes:
         maxWorkers: 0
         # CPU is the number of CPUs used by this pod type.
         # (Used for both requests and limits. Must be an integer, as Ray does not support fractional CPUs.)
-        CPU: 2
+        CPU: 4
         # memory is the memory used by this Pod type.
         # (Used for both requests and limits.)
-        memory: 6Gi
+        memory: 8Gi
         # GPU is the number of NVIDIA GPUs used by this pod type.
         # (Optional, requires GPU nodes with appropriate setup. See https://docs.ray.io/en/master/cluster/kubernetes-gpu.html)
         GPU: 0
@@ -42,10 +42,10 @@ podTypes:
         maxWorkers: 4
         # memory is the memory used by this Pod type.
         # (Used for both requests and limits.)
-        memory: 6Gi
+        memory: 8Gi
         # CPU is the number of CPUs used by this pod type.
         # (Used for both requests and limits. Must be an integer, as Ray does not support fractional CPUs.)
-        CPU: 2
+        CPU: 4
         # GPU is the number of NVIDIA GPUs used by this pod type.
         # (Optional, requires GPU nodes with appropriate setup. See https://docs.ray.io/en/master/cluster/kubernetes-gpu.html)
         GPU: 0
