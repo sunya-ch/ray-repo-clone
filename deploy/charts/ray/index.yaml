@@ -3,12 +3,12 @@ entries:
   ray-clone:
   - apiVersion: v2
     appVersion: latest
-    created: "2021-07-02T16:40:13.545641+09:00"
+    created: "2021-07-02T16:43:15.151879+09:00"
     description: A Helm chart for deployments of Ray on Kubernetes.
-    digest: 55898c9c5d90fdddb53a377998e86b4814bcb62f9eb15c1327f3824cb820f2b1
+    digest: d912c8ff478137149520b382a1e7e2dd0bd9eaf7989547be11a7878e535ff68b
     name: ray-clone
     type: application
     urls:
     - https://raw.githubusercontent.com/sunya-ch/ray-repo-clone/master/deploy/charts/ray/ray-clone-0.1.0.tgz
     version: 0.1.0
-generated: "2021-07-02T16:40:13.535067+09:00"
+generated: "2021-07-02T16:43:15.143099+09:00"
