@@ -38,7 +38,7 @@ podTypes:
     # The key for each podType is a user-defined string.
     rayWorkerType:
         # minWorkers is the minimum number of Ray workers of this pod type to keep running.
-        minWorkers: 1
+        minWorkers: 4
         # maxWorkers is the maximum number of Ray workers of this pod type to which Ray will scale.
         maxWorkers: 4
         # memory is the memory used by this Pod type.
@@ -54,11 +54,10 @@ podTypes:
         # "CPU", "GPU", and "memory" are filled automatically based on the above settings, but can be overriden;
         # For example, rayResources: {"CPU": 0} can be used in the head podType to prevent Ray from scheduling tasks on the head.
         # See https://docs.ray.io/en/master/advanced.html#dynamic-remote-parameters for an example of usage of custom resources in a Ray task.
-        rayResources:
-          ibm-cloud.kubernetes.io/worker-pool-name: cpe
+        rayResources: {}
         # Optionally, set a node selector for this Pod type. See https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#nodeselector
         nodeSelector:
-
+          ibm-cloud.kubernetes.io/worker-pool-name: cpe
         image: jp.icr.io/tyos/codait_nlp_benchmark:0609-ray-nightly
         imagePullSecret: all-icr-io
 
